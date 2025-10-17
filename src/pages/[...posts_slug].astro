@@ -51,7 +51,7 @@ export async function getStaticPaths() {
 
   type PathItem = {
     params: { posts_slug: string }
-    props: { post: any, lang: string, supportedLangs: string[], image: {url: string, alt: string} }
+    props: { post: any, lang: string, supportedLangs: string[], image?: {url?: string, alt?: string} }
   }
 
   const paths: PathItem[] = []
@@ -115,10 +115,10 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
     <Image
       width={800}
       height={400}
-      src={base + post.data.image.url}
-      alt={post.data.image.alt}
+      src={base + post.data.image?.url}
+      alt={post.data.image?.alt ?? ''}
       loading="lazy"
-      onerror="this.error=null;this.src=`${base}/images/cover_demo.jpg`;"
+      onerror="this.onerror=null;this.src=`${base}/images/cover_demo.jpg`;this.alt='Cover Image Not Found';"
     />
   </div>
   

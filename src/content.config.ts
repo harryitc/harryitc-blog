@@ -28,8 +28,8 @@ const posts = defineCollection({
       url: z.string().refine(
         url => !/^[a-zA-Z][\w+.-]*:\/\//.test(url),
         { message: 'Image URL must be a relative/internal path — external links are not allowed' },
-      ),
-      alt: z.string(),
+      ).optional().default(''),
+      alt: z.string().optional().default(''),
     }).optional(),
   }),
 })
