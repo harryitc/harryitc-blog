@@ -14,10 +14,10 @@ export const themeConfig: ThemeConfig = {
     // author name
     author: 'Harryitc',
     // site url
-    url: 'https://retypeset.radishzz.cc',
+    url: 'https://harryitc.github.io',
     // base path
     // root directory for all pages and assets
-    base: '/', // e.g., '/blog', '/docs'
+    base: '/harryitc-blog/', // e.g., '/blog', '/docs'
     // favicon url
     // recommended formats: svg, png or ico
     favicon: '/icons/favicon.svg', // or https://example.com/favicon.svg
