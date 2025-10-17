@@ -111,7 +111,14 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
   supportedLangs={supportedLangs}
 >
   { post.data.image?.url && <div style="width: 100%; height: 300px; object-fit: cover; overflow: hidden;">
-  <Image width={800} height={400} src={post.data.image?.url ?? '/images/cover_demo.jpg'} alt={post.data.image?.alt ?? ''} />
+  <Image
+    width={800}
+    height={400}
+    src={post.data.image?.url ? post.data.image.url : '/images/cover_demo.jpg'}
+    alt={post.data.image?.alt ?? ''}
+    loading="lazy"
+    onerror="this.onerror=null;this.src='/images/cover_demo.jpg';"
+  />
   </div> }
   
   <article class="heti mt-6">
