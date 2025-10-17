@@ -11,6 +11,7 @@ export const langMap: Record<string, string[]> = {
   'ru': ['ru-RU'],
   'zh': ['zh-CN'],
   'zh-tw': ['zh-TW'],
+  'vi': ['vi-VN'],
 }
 
 // Giscus Language Map

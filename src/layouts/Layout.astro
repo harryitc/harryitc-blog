@@ -23,10 +23,11 @@ interface Props {
   postTitle?: string
   postDescription?: string
   postSlug?: string
-  supportedLangs?: string[]
+  supportedLangs?: string[],
+  postImage?: {url: string, alt: string},
 }
 
-const { postTitle, postDescription, postSlug, supportedLangs = [] } = Astro.props
+const { postTitle, postDescription, postSlug, supportedLangs = [], postImage } = Astro.props
 const { isPost } = getPageInfo(Astro.url.pathname)
 const fontStyle = themeConfig.global.fontStyle === 'serif' ? 'font-serif' : 'font-sans'
 const MarginBottom = isPost && themeConfig.comment?.enabled

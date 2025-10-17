@@ -10,6 +10,7 @@ import { allLocales, defaultLocale, moreLocales } from '@/config'
 import Layout from '@/layouts/Layout.astro'
 import { checkPostSlugDuplication } from '@/utils/content'
 import { getPostDescription } from '@/utils/description'
+import { Image } from 'astro:assets'
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts')
@@ -49,7 +50,7 @@ export async function getStaticPaths() {
 
   type PathItem = {
     params: { posts_slug: string }
-    props: { post: any, lang: string, supportedLangs: string[] }
+    props: { post: any, lang: string, supportedLangs: string[], image: {url: string, alt: string} }
   }
 
   const paths: PathItem[] = []
@@ -67,6 +68,7 @@ export async function getStaticPaths() {
           post,
           lang: defaultLocale,
           supportedLangs: slugToLangs[slug] ?? [],
+          image: post.data.image || {url: '', alt: ''},
         },
       })
     }
@@ -85,6 +87,7 @@ export async function getStaticPaths() {
             post,
             lang,
             supportedLangs: slugToLangs[slug] ?? [],
+            image: post.data.image || {url: '', alt: ''},
           },
         })
       }
@@ -94,7 +97,7 @@ export async function getStaticPaths() {
   return paths
 }
 
-const { post, lang, supportedLangs } = Astro.props
+const { post, lang, supportedLangs, } = Astro.props
 const slug = post.data.abbrlink || post.id
 const description = getPostDescription(post, 'meta')
 const { Content, headings, remarkPluginFrontmatter } = await render(post)
@@ -104,9 +107,12 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
   postTitle={post.data.title}
   postDescription={description}
   postSlug={post.id}
+  postImage={post.data.image}
   supportedLangs={supportedLangs}
 >
-  <article class="heti">
+  { post.data.image?.url && <Image width={800} height={100} src={post.data.image?.url ?? '/images/cover_demo.jpg'} alt={post.data.image?.alt ?? ''} /> }
+  
+  <article class="heti mt-6">
     <div class="relative">
       <!-- Go Back Button On Desktop -->
       <BackButton />

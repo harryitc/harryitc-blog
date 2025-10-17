@@ -98,4 +98,13 @@ export const ui = {
     about: '關於',
     toc: '目錄',
   },
+  'vi': {
+    title: `Harryitc's Blog`,
+    subtitle: 'Học tập, chia sẻ và phát triển',
+    description: 'Học tập, chia sẻ và phát triển là ba giá trị cốt lõi mà blog này hướng tới. Tôi tin rằng việc không ngừng học hỏi sẽ giúp chúng ta phát triển bản thân và đóng góp tích cực cho cộng đồng. Qua việc chia sẻ kiến thức và kinh nghiệm, tôi hy vọng có thể truyền cảm hứng và hỗ trợ những người khác trên hành trình của họ.',
+    posts: 'Bài viết',
+    tags: 'Tags',
+    about: 'Giới thiệu',
+    toc: 'Mục lục',
+  }
 }
