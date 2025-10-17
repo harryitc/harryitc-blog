@@ -12,7 +12,7 @@ lang: vi
 abbrlink: javascript-la-gi
 description: Khám phá vai trò quan trọng của JavaScript trong phát triển web hiện đại, sự khác biệt với Java và tầm ảnh hưởng từ frontend đến backend với Node.js.
 image:
-    url: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'
+    url: '/images/js.png'
     alt: 'JavaScript logo'
 ---
 

@@ -12,7 +12,7 @@ lang: vi
 abbrlink: javascript-bien-hang-scope
 description: Hiểu sâu về cách khai báo biến với let, const, var trong JavaScript. Tìm hiểu lexical scope, block scope, function scope và hiện tượng hoisting với ví dụ trực quan.
 image:
-    url: 'https://miro.medium.com/v2/resize:fit:1400/1*8lKzkDhVn-hIQ2BqIKN2Ow.png'
+    url: ''
     alt: 'JavaScript Variables and Scope'
 ---
 

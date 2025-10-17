@@ -12,7 +12,7 @@ lang: vi
 abbrlink: javascript-function-closures
 description: Khám phá sâu về Functions, Arrow Functions và Closures trong JavaScript. Tìm hiểu execution context, lexical environment và ví dụ thực tế với counter, event handlers.
 image:
-    url: 'https://miro.medium.com/v2/resize:fit:1400/1*AaOV4lL3XHiHn5F6GFjnVw.png'
+    url: ''
     alt: 'JavaScript Functions and Closures'
 ---
 

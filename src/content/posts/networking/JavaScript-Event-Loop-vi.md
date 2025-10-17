@@ -13,7 +13,7 @@ lang: vi
 abbrlink: javascript-event-loop
 description: Hiểu sâu về Event Loop trong JavaScript - cách hoạt động của Call Stack, Web APIs, Callback Queue, Microtask Queue. Kèm sơ đồ minh họa và ví dụ thực tế.
 image:
-    url: 'https://miro.medium.com/v2/resize:fit:1400/1*FA9NGxNB6-v1oI2qGEtlRQ.png'
+    url: '/images/event_loop_js.png'
     alt: 'JavaScript Event Loop Diagram'
 ---
 

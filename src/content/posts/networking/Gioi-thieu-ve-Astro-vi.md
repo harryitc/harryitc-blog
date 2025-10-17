@@ -11,7 +11,7 @@ lang: vi
 abbrlink: gioi-thieu-ve-astro
 description: Tìm hiểu về Astro - framework mới giúp xây dựng website nhanh chóng với hiệu suất tối ưu và khả năng tích hợp đa dạng.
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
+    url: ''
     alt: 'The Astro logo on a dark background with a pink glow.'
 ---
 

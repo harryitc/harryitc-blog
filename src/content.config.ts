@@ -25,7 +25,10 @@ const posts = defineCollection({
       { message: 'Abbrlink can only contain lowercase letters, numbers and hyphens' },
     ),
     image: z.object({
-      url: z.string().url(),
+      url: z.string().refine(
+        url => !/^[a-zA-Z][\w+.-]*:\/\//.test(url),
+        { message: 'Image URL must be a relative/internal path — external links are not allowed' },
+      ),
       alt: z.string(),
     }).optional(),
   }),
