@@ -11,6 +11,7 @@ import Layout from '@/layouts/Layout.astro'
 import { checkPostSlugDuplication } from '@/utils/content'
 import { getPostDescription } from '@/utils/description'
 import { Image } from 'astro:assets'
+import { base } from '@/config'
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts')
@@ -114,10 +115,10 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
   <Image
     width={800}
     height={400}
-    src={post.data.image?.url ? post.data.image.url : '/images/cover_demo.jpg'}
+    src={post.data.image?.url ? post.data.image.url : base + '/images/cover_demo.jpg'}
     alt={post.data.image?.alt ?? ''}
     loading="lazy"
-    onerror="this.onerror=null;this.src='/images/cover_demo.jpg';"
+    onerror=`this.onerror=null;this.src='${base}/images/cover_demo.jpg';`
   />
   </div> }
   
