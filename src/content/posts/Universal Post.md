@@ -2,7 +2,7 @@
 title: Universal Post
 published: 2025-03-24
 draft: true
-# lang: ''
+lang: 'en'
 description: This is a universal multilingual post with unspecified 'lang', displayed by default across all language-specific paths. Este es un artículo universal multilingüe sin definir 'lang', visible por defecto en todas las rutas de idiomas.
 ---
 
