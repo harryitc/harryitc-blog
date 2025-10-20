@@ -1,13 +1,15 @@
 ---
+import themeConfig from '@/config'
 import { ui } from '@/i18n/ui'
 import { getPageInfo } from '@/utils/page'
 
-const { currentLang, isHome, isPost, isTag, isAbout, getLocalizedPath } = getPageInfo(Astro.url.pathname)
+const { currentLang, isHome, isPost, isTag, isAbout, isPortfolio, getLocalizedPath } = getPageInfo(Astro.url.pathname)
 const currentUI = ui[currentLang as keyof typeof ui] ?? {}
 
 const isPostActive = isHome || isPost
 const isTagActive = isTag
 const isAboutActive = isAbout
+const isPortfolioActive = isPortfolio
 
 function getNavItemClass(isActive: boolean) {
   return isActive
@@ -25,6 +27,12 @@ const navItems = [
     href: '/tags/',
     label: currentUI.tags,
     className: getNavItemClass(isTagActive),
+  },
+  {
+    href: themeConfig.site.url,
+    label: currentUI.portfolio,
+    className: getNavItemClass(isPortfolioActive),
+    external: true,
   },
   {
     href: '/about/',
@@ -46,7 +54,7 @@ const navItems = [
     {navItems.map(item => (
       <li>
         <a
-          href={getLocalizedPath(item.href)}
+          href={item.external ? item.href : getLocalizedPath(item.href)}
           class={item.className}
         >
           {item.label}

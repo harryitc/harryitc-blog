@@ -6,6 +6,7 @@ export const ui = {
     posts: 'Beiträge',
     tags: 'Schlagwörter',
     about: 'Über',
+    portfolio: 'Portfolio',
     toc: 'Inhaltsverzeichnis',
   },
   'en': {
@@ -15,6 +16,7 @@ export const ui = {
     posts: 'Posts',
     tags: 'Tags',
     about: 'About',
+    portfolio: 'Portfolio',
     toc: 'Table of Contents',
   },
   'es': {
@@ -24,6 +26,7 @@ export const ui = {
     posts: 'Artículos',
     tags: 'Etiquetas',
     about: 'Sobre',
+    portfolio: 'Portafolio',
     toc: 'Índice',
   },
   'fr': {
@@ -33,6 +36,7 @@ export const ui = {
     posts: 'Articles',
     tags: 'Étiquettes',
     about: 'À propos',
+    portfolio: 'Portfolio',
     toc: 'Table des matières',
   },
   'ja': {
@@ -42,6 +46,7 @@ export const ui = {
     posts: '記事',
     tags: 'タグ',
     about: '概要',
+    portfolio: 'ポートフォリオ',
     toc: '目次',
   },
   'ko': {
@@ -51,6 +56,7 @@ export const ui = {
     posts: '게시물',
     tags: '태그',
     about: '소개',
+    portfolio: '포트폴리오',
     toc: '목차',
   },
   'pl': {
@@ -60,6 +66,7 @@ export const ui = {
     posts: 'Artykuły',
     tags: 'Tagi',
     about: 'O stronie',
+    portfolio: 'Portfolio',
     toc: 'Spis treści',
   },
   'pt': {
@@ -69,6 +76,7 @@ export const ui = {
     posts: 'Artigos',
     tags: 'Tags',
     about: 'Sobre',
+    portfolio: 'Portfólio',
     toc: 'Sumário',
   },
   'ru': {
@@ -78,6 +86,7 @@ export const ui = {
     posts: 'Посты',
     tags: 'Теги',
     about: 'О себе',
+    portfolio: 'Портфолио',
     toc: 'Оглавление',
   },
   'zh': {
@@ -87,6 +96,7 @@ export const ui = {
     posts: '文章',
     tags: '标签',
     about: '关于',
+    portfolio: '作品集',
     toc: '目录',
   },
   'zh-tw': {
@@ -96,6 +106,7 @@ export const ui = {
     posts: '文章',
     tags: '標籤',
     about: '關於',
+    portfolio: '作品集',
     toc: '目錄',
   },
   'vi': {
@@ -105,6 +116,7 @@ export const ui = {
     posts: 'Bài viết',
     tags: 'Tags',
     about: 'Giới thiệu',
+    portfolio: 'Portfolio',
     toc: 'Mục lục',
   }
 }
