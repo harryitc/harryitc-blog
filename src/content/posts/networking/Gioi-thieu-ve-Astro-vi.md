@@ -7,7 +7,7 @@ tags:
   - JavaScript
   - Guide
 toc: true
-lang: vi
+lang: en
 abbrlink: gioi-thieu-ve-astro
 description: Tìm hiểu về Astro - framework mới giúp xây dựng website nhanh chóng với hiệu suất tối ưu và khả năng tích hợp đa dạng.
 image:
