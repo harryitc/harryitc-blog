@@ -13,7 +13,7 @@ lang: vi
 abbrlink: javascript-prototype-class
 description: Phân tích sâu Prototype chain, Class syntax và inheritance trong JavaScript. Hiểu tại sao Class chỉ là "syntactic sugar" và cách JavaScript OOP hoạt động thực sự.
 image:
-    url: '/images/js.png'
+    url: '/images/prototype-javascript-2-vippro.png'
     alt: 'JavaScript Prototype and Class'
 ---
 

@@ -12,7 +12,7 @@ lang: vi
 abbrlink: javascript-destructuring-spread-rest
 description: Làm chủ cú pháp ES6 giúp code JavaScript gọn gàng và dễ đọc hơn. So sánh cách viết cũ và mới với Destructuring, Spread và Rest operators.
 image:
-    url: '/images/js.png'
+    url: '/images/destructuring-object.png'
     alt: 'JavaScript ES6 Destructuring and Spread'
 ---
 

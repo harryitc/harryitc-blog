@@ -12,7 +12,7 @@ lang: vi
 abbrlink: javascript-promise-async-await
 description: Tìm hiểu cách xử lý bất đồng bộ trong JavaScript - từ callback hell đến Promise và async/await. So sánh 3 cách viết code để hiểu rõ sự tiến hóa.
 image:
-    url: '/images/js.png'
+    url: '/images/async-await-la-gi.webp'
     alt: 'JavaScript Promise and Async/Await'
 ---
 

@@ -13,7 +13,7 @@ lang: vi
 abbrlink: javascript-clean-code
 description: Hướng dẫn viết Clean Code JavaScript với naming conventions, function design, error handling. Kèm ESLint + Prettier config để maintain code quality tự động.
 image:
-    url: '/images/js.png'
+    url: '/images/clean-code.webp'
     alt: 'JavaScript Clean Code'
 ---
 

@@ -14,8 +14,8 @@ lang: vi
 abbrlink: javascript-modules-import-export
 description: Hiểu rõ cơ chế module trong JavaScript, sự khác biệt giữa CommonJS và ES Modules, tree-shaking và cách tổ chức project hiện đại.
 image:
-    url: '/images/js.png'
-    alt: 'JavaScript Modules'
+    url: '/images/commonjs-esmodules.png'
+    alt: 'CommonJS vs ES Modules'
 ---
 
 Module hóa giúp chia code thành các file nhỏ, dễ quản lý và tái sử dụng. Hãy cùng tìm hiểu 2 hệ thống module phổ biến trong JavaScript và cách áp dụng vào project thực tế.

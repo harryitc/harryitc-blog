@@ -13,7 +13,7 @@ lang: vi
 abbrlink: javascript-debounce-throttle
 description: Hiểu rõ Debounce và Throttle để tối ưu hiệu suất ứng dụng JavaScript. Tự code và áp dụng vào input search, scroll event với ví dụ thực tế.
 image:
-    url: '/images/js.png'
+    url: '/images/debounce-throttle.png'
     alt: 'JavaScript Debounce and Throttle'
 ---
 
